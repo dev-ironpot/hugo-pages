@@ -1,0 +1,148 @@
+{{ $dataJ := getJSON
+"https://6190b4bcf6bf450017484c95.mockapi.io/posts?page=1&limit=10" }} {{ range
+$dataJ }}
+<div class="card">
+  <div class="card-content">
+    <h2 class="card-title">{{.title}}</h2>
+    <!-- <p>
+    <time>{{ .createdAt | time.Format ":date_full" }}</time>
+    {{ if or .Params.Author site.Author.name }}
+    <span>{{ .Params.Author | default site.Author.name }}</span>
+    {{ end }}
+  </p> -->
+    <p class="card-body">{{.content}}</p>
+    <a href="{{.link}}" target="new" class="button">{{.link}}</a>
+  </div>
+</div>
+<div class="card-spacing"></div>
+{{ end }}
+
+<style>
+  :root {
+    --clr-neutral-900: hsl(210, 21%, 29%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+  }
+
+  .card {
+    color: var(--clr-neutral-100);
+    background-image: url(/images/card-bg.jpg);
+    background-size: cover;
+    padding: 5rem 0 0;
+    /* max-width: 35ch; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .card-spacing {
+    padding-top: 1rem;
+  }
+
+  .card-content {
+    --padding: 1.5em;
+    padding: var(--padding);
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(20 50% 50% / 0.3) 20%,
+      hsl(0 0% 0% / 1)
+    );
+  }
+
+  .card-title {
+    position: relative;
+    width: max-content;
+    /* outline: 1px solid red; */
+  }
+
+  .card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    left: calc(var(--padding) * -0.67);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+  }
+
+  .card-body {
+    color: rgb(255 255 255 /0.85);
+    overflow: hidden;
+    /* ellipsis text 2line */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+
+  .button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: var(--clr-neutral-100);
+  }
+
+  @media (hover) {
+    .card {
+      transition: transform 500ms ease;
+    }
+    .card:hover,
+    .card:focus-within {
+      transform: scale(1.05);
+    }
+    .card-content {
+      transform: translateY(70%);
+      transition: transform 500ms ease;
+    }
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+      transform: translateY(0);
+      transition-delay: 500ms;
+    }
+
+    .card:focus-within .card-content {
+      transition-duration: 0ms;
+    }
+
+    .card-content > *:not(.card-title) {
+      opacity: 0;
+      transition: transform 500ms linear;
+    }
+
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title) {
+      opacity: 1;
+      transition-delay: 1000ms;
+    }
+
+    .card-title::after {
+      transform: scaleX(0);
+    }
+
+    .card:hover .card-title::after {
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 500ms ease;
+    }
+  }
+
+  @media (prefers-reduce-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: atuo !important;
+      transition-delay: 0ms !important;
+    }
+  }
+</style>

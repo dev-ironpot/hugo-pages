@@ -1,0 +1,146 @@
+<div class="map_wrap">
+  <div
+    id="map"
+    style="width: 800px; height: 400px; position: relative; overflow: hidden"
+  ></div>
+  <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+  <div class="custom_zoomcontrol radius_border">
+    <span onclick="zoomIn()"
+      ><img src="/images/icons/ico_plus.png" alt="확대"
+    /></span>
+    <span onclick="zoomOut()"
+      ><img src="/images/icons/ico_minus.png" alt="축소"
+    /></span>
+  </div>
+</div>
+<div class="address">
+  <ul>
+    <li>
+      <label> Address. </label>
+      <span> 경기 시흥시 능곡중앙로 120-1 우남퍼스트빌2차 상가동 103호 </span>
+    </li>
+    <li>
+      <label> Tel. </label>
+      <span> 031.313.8207 </span>
+    </li>
+  </ul>
+</div>
+<script
+  type="text/javascript"
+  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9ed3c1c691897c093d32ca07b7bb7e68"
+></script>
+<script>
+  //   var container = document.getElementById("map");
+  //   var options = {
+  //     center: new kakao.maps.LatLng(37.37411, 126.81295),
+  //     level: 3,
+  //   };
+
+  //   var map = new kakao.maps.Map(container, options);
+
+  var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+    mapOption = {
+      center: new kakao.maps.LatLng(37.37411, 126.81295), // 지도의 중심좌표
+      level: 3, // 지도의 확대 레벨
+    };
+
+  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+  // 마커가 표시될 위치입니다
+  var markerPosition = new kakao.maps.LatLng(37.37421, 126.81287);
+
+  // 마커를 생성합니다
+  var marker = new kakao.maps.Marker({
+    position: markerPosition,
+  });
+  marker.setMap(map);
+  // 마커 이미지를 변경하려면 아래 코드를 사용합니다.
+  //   var imageSrc = "/images/icons/icons8-3d-modeling-64.png", // 마커이미지의 주소입니다
+  //     imageSize = new kakao.maps.Size(32, 32), // 마커이미지의 크기입니다
+  //     imageOption = { offset: new kakao.maps.Point(5, 64) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+  //   // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+  //   var markerImage = new kakao.maps.MarkerImage(
+  //       imageSrc,
+  //       imageSize,
+  //       imageOption
+  //     ),
+  //     markerPosition = new kakao.maps.LatLng(37.37411, 126.81295); // 마커가 표시될 위치입니다
+
+  //   // 마커를 생성합니다
+  //   var marker = new kakao.maps.Marker({
+  //     position: markerPosition,
+  //     image: markerImage, // 마커이미지 설정
+  //   });
+
+  //   // 마커가 지도 위에 표시되도록 설정합니다
+  //   marker.setMap(map);
+
+  // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
+  function setMapType(maptype) {
+    var roadmapControl = document.getElementById("btnRoadmap");
+    var skyviewControl = document.getElementById("btnSkyview");
+    if (maptype === "roadmap") {
+      map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
+      roadmapControl.className = "selected_btn";
+      skyviewControl.className = "btn";
+    } else {
+      map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
+      skyviewControl.className = "selected_btn";
+      roadmapControl.className = "btn";
+    }
+  }
+
+  // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+  function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+  }
+
+  // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+  function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+  }
+</script>
+<style>
+  /* #map {
+    max-width: 100%;
+  } */
+
+  .map_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+  }
+  .radius_border {
+    border: 1px solid #919191;
+    border-radius: 5px;
+  }
+  .custom_zoomcontrol {
+    position: absolute;
+    top: 310px;
+    right: 10px;
+    width: 36px;
+    height: 80px;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #f5f5f5;
+  }
+  .custom_zoomcontrol span {
+    display: block;
+    width: 36px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .custom_zoomcontrol span img {
+    width: 36px;
+    height: 36px;
+    padding: 4px 4px;
+    border: none;
+    z-index: 100;
+  }
+  .custom_zoomcontrol span:first-child {
+    border-bottom: 1px solid #bfbfbf;
+  }
+</style>

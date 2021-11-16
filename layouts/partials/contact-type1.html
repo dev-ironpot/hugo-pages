@@ -1,0 +1,65 @@
+<div class="contact-form row">
+  <form name="contact" action="https://formspree.io/f/mzbyndwo" method="POST">
+    <div
+      class="col-sm-6 contact-form-item wow zoomIn animated"
+      style="visibility: visible; animation-name: zoomIn"
+    >
+      <input name="name" id="name" type="text" placeholder="Your Name: *" />
+      <span class="error" id="err-name">please enter name</span>
+    </div>
+    <div
+      class="col-sm-6 contact-form-item wow zoomIn animated"
+      style="visibility: visible; animation-name: zoomIn"
+    >
+      <input name="email" id="email" type="text" placeholder="E-Mail: *" />
+      <span class="error" id="err-email">please enter e-mail</span>
+      <span class="error" id="err-emailvld">e-mail is not a valid format</span>
+    </div>
+    <div
+      class="col-sm-12 contact-form-item wow zoomIn animated"
+      style="visibility: visible; animation-name: zoomIn"
+    >
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Your Message"
+      ></textarea>
+    </div>
+    <div class="col-sm-12 contact-form-item">
+      <button
+        class="send_message"
+        id="send"
+        data-lang="en"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        submit
+      </button>
+    </div>
+    <div class="clear"></div>
+    <div class="error text-align-center" id="err-form">
+      There was a problem validating the form please check!
+    </div>
+    <div class="error text-align-center" id="err-timedout">
+      The connection to the server timed out!
+    </div>
+    <div class="error" id="err-state"></div>
+  </form>
+
+  <div class="clearfix"></div>
+  <div id="ajaxsuccess">Successfully sent!!</div>
+  <div class="clear"></div>
+</div>
+<!-- /.contacts-form & inner row -->
+
+<style>
+  button {
+    visibility: visible;
+    animation-name: fadeInUp;
+  }
+
+  .contact-form .contact-form-item .send_message {
+    justify-content: flex-end;
+    padding-left: 1rem;
+    margin-left: auto;
+  }
+</style>

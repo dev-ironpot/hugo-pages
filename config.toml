@@ -1,0 +1,48 @@
+baseURL = 'http://example.org/'
+languageCode = 'ko'
+title = 'Paper'
+theme = 'paper'
+#disqus 주석할 경우, github uttrences 를 기본 댓글 기능으로 사용한다.
+#disqusShortname = 'dev-ironpot'   # add disqus comments
+#githubRepo
+githubRepo = 'dev-ironpot/blog-comments'
+googleAnalytics = "G-TWYMR5JJT2"
+
+[params]
+  disableHLJS = true                         # don't use highlight.js
+  twitter = 'devironpot'                # twitter.com/YOUR_TWITTER_ID
+  github = 'dev-ironpot'                  # github.com/YOUR_GITHUB_ID
+  instagram = 'dev.ironpot'            # instagram.com/YOUR_INSTAGRAM_ID
+  description = '설명입니다.'
+
+#[permalinks]
+# posts = '/:year/:month/:title/'
+
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'about me'
+  pre = "<i class='fa fa-heart'></i>"
+  url = '/about/'
+  weight = -110
+[[menu.main]]
+  name = 'projects'
+  post = "<span class='alert'>New!</span>"
+  pre = "<i class='fa fa-road'></i>"
+  url = '/projects/'
+  weight = -100
+[[menu.main]]
+  name = 'articles'
+  post = "<span class='alert'>New!</span>"
+  pre = "<i class='fa fa-road'></i>"
+  url = '/articles/'
+  weight = -90
+[[menu.main]]
+  name = 'api'
+  post = "<span class='alert'>New!</span>"
+  pre = "<i class='fa fa-road'></i>"
+  url = '/api/'
+  weight = -80
+
+[author]
+  name='dev iron'
