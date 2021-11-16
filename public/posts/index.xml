@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Paper</title>
+    <link>http://localhost:8080/posts/</link>
+    <description>Recent content in Posts on Paper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 13 Nov 2021 00:36:54 +0900</lastBuildDate><atom:link href="http://localhost:8080/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reducer</title>
+      <link>http://localhost:8080/posts/202111151607/</link>
+      <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/202111151607/</guid>
+      <description>Q. 리듀서(Reducer)가 뭔가요? 리듀서라고 불리는 이유는 리듀서가 reduce()함수에서 사용하는 콜백함수이기때문에 리듀서라고 불립니다. Reduce 의미는 어떤 것을 더 단순하거나 더 일반적인 형태로 바꾸다(to change something into a simpler or more general form)라는 의미에 가깝습니다.
+리듀서(Reducer)가 뭔가요?</description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>http://localhost:8080/posts/202111130036/</link>
+      <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/202111130036/</guid>
+      <description>Example instagram input:
+Example param input: 설명입니다.
+Example of ref and relref
+[하이라이트](http://localhost:8080/posts/highlight/) [Who](/about/#who) Example tweet input:
+Example vimeo input:   Example youtube input:   rush pic.twitter.com/DAtd9foaOF
+&amp;mdash; 개발철밥통 (@devironpot) November 14, 2021  </description>
+    </item>
+    
+    <item>
+      <title>highlight</title>
+      <link>http://localhost:8080/posts/highlight/</link>
+      <pubDate>Sat, 13 Nov 2021 00:34:16 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/highlight/</guid>
+      <description>&amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Configure Hugo</title>
+      <link>http://localhost:8080/posts/202111130030/</link>
+      <pubDate>Sat, 13 Nov 2021 00:30:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/202111130030/</guid>
+      <description>Configuration File ├── config│ ├── _default│ │ ├── config.toml│ │ ├── languages.toml│ │ ├── menus.en.toml│ │ ├── menus.zh.toml│ │ └── params.toml│ ├── production│ │ ├── config.toml│ │ └── params.toml│ └── staging│ ├── config.toml│ └── params.toml위 디렉토리 구조의 경우,
+hugo --environment staging 위 명령어를 실행할 경우,config/_default의 모든 설정을 사용하고 staging의 설정을 병합하게 됩니다. Configure Hugo</description>
+    </item>
+    
+    <item>
+      <title>Hugo Directory Structure</title>
+      <link>http://localhost:8080/posts/202111130006/</link>
+      <pubDate>Sat, 13 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/202111130006/</guid>
+      <description>Hugo 디렉토리 구조 모듈 설정 기본 생성되는 폴더 [module] [[module.mounts]] source = &amp;#39;content&amp;#39; target = &amp;#39;content&amp;#39; [[module.mounts]] source = &amp;#39;static&amp;#39; target = &amp;#39;static&amp;#39; [[module.mounts]] source = &amp;#39;layouts&amp;#39; target = &amp;#39;layouts&amp;#39; [[module.mounts]] source = &amp;#39;data&amp;#39; target = &amp;#39;data&amp;#39; [[module.mounts]] source = &amp;#39;assets&amp;#39; target = &amp;#39;assets&amp;#39; [[module.mounts]] source = &amp;#39;i18n&amp;#39; target = &amp;#39;i18n&amp;#39; [[module.mounts]] source = &amp;#39;archetypes&amp;#39; target = &amp;#39;archetypes&amp;#39;  contents  사이트의 모든 콘텐츠을 의미한다. 최상위 폴더는 섹션으로 간주된다.
+  static  모든 정적 콘텐츠(이미지, CSS, JavaScript 등)를 저장합니다.</description>
+    </item>
+    
+    <item>
+      <title>Hugo 시작하기</title>
+      <link>http://localhost:8080/posts/my-first-post/</link>
+      <pubDate>Fri, 12 Nov 2021 21:07:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/my-first-post/</guid>
+      <description>Hugo 시작하기  휴고는 Go로 작성된 정적 사이트 생성기이다. 메인페이지에 가면 웹사이트 구축을 위한 세계에서 가장 빠른 프레임워크(The world’s fastest framework for building websites) 라고 안내하고 있다.
+ 목차  Chocolate 설치[link: Chocolate 설치] Hugo 설치[link: Hugo 설치]  Chocolate 설치 (Windows)  윈도우 패키지 매니져인 Chocolatey 를 설치합니다.  Windows PowerShell을 관리자 모드로 실행합니다. Command 복사해서 실행  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.</description>
+    </item>
+    
+    <item>
+      <title>Hugo shortcodes. figure</title>
+      <link>http://localhost:8080/posts/202111130033/</link>
+      <pubDate>Fri, 12 Nov 2021 00:33:16 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/202111130033/</guid>
+      <description>Hugo figure  Lighthouse (figure)   </description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-10/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-10/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-2/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-2/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-3/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-3/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-4/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-4/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-5/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-5/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-6/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-6/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-7/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-7/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-8/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-8/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy-9/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy-9/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness-copy/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness-copy/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+    <item>
+      <title>happy ness</title>
+      <link>http://localhost:8080/posts/happy/ness/</link>
+      <pubDate>Thu, 11 Nov 2021 00:06:15 +0900</pubDate>
+      
+      <guid>http://localhost:8080/posts/happy/ness/</guid>
+      <description>우왕 되나?</description>
+    </item>
+    
+  </channel>
+</rss>

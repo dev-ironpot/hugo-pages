@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="ko">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Hugo Directory Structure - Paper</title>
+
+  
+  
+  <meta name="description" content="Hugo 디렉토리 구조 모듈 설정 기본 생성되는 폴더 [module] [[module.mounts]] source = &#39;content&#39; target = &#39;content&#39; [[module.mounts]] source = &#39;static&#39; target = &#39;static&#39; [[module.mounts]] source = &#39;layouts&#39; target = &#39;layouts&#39; [[module.mounts]] source = &#39;data&#39; target = &#39;data&#39; [[module.mounts]] source = &#39;assets&#39; target = &#39;assets&#39; [[module.mounts]] source = &#39;i18n&#39; target = &#39;i18n&#39; [[module.mounts]] source = &#39;archetypes&#39; target = &#39;archetypes&#39;  contents  사이트의 모든 콘텐츠을 의미한다. 최상위 폴더는 섹션으로 간주된다.
+  static  모든 정적 콘텐츠(이미지, CSS, JavaScript 등)를 저장합니다." />
+  <meta name="author" content="dev iron" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:8080/app.min.css" />
+
+  
+
+  
+  <link rel="preload" as="image" href="http://localhost:8080/theme.png" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:8080/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:8080/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:8080/instagram.svg" />
+  
+
+  
+  <link rel="icon" href="http://localhost:8080/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:8080/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.89.2" />
+
+  
+  
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="http://localhost:8080/">Paper</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">about me</a>
+    
+    <a class="" href="/projects/">projects</a>
+    
+    <a class="" href="/articles/">articles</a>
+    
+    <a class="" href="/api/">api</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/devironpot"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/dev-ironpot"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="instagram"
+      style="--url: url(./instagram.svg)"
+      href="https://instagram.com/dev.ironpot"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>Nov 13, 2021</time>
+      
+      <span>dev iron</span>
+      
+    </p>
+    <h1>Hugo Directory Structure</h1>
+  </header>
+  <section class="post-content"><h2 id="hugo-디렉토리-구조">Hugo 디렉토리 구조</h2>
+<h3 id="모듈-설정">모듈 설정</h3>
+<h4 id="기본-생성되는-폴더">기본 생성되는 폴더</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">module</span>]
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;content&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;content&#39;</span>
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;static&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;static&#39;</span>
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;layouts&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;layouts&#39;</span>
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;data&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;data&#39;</span>
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;assets&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;assets&#39;</span>
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;i18n&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;i18n&#39;</span>
+[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+  <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;archetypes&#39;</span>
+  <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;archetypes&#39;</span>
+</code></pre></div><ol>
+<li>contents
+<blockquote>
+<p>사이트의 모든 콘텐츠을 의미한다. 최상위 폴더는 섹션으로 간주된다.</p>
+</blockquote>
+</li>
+<li>static
+<blockquote>
+<p>모든 정적 콘텐츠(이미지, CSS, JavaScript 등)를 저장합니다. Hugo가 Build할 때 모든 정적 콘텐츠는 그대로 복사됩니다.</p>
+</blockquote>
+</li>
+<li>layouts
+<blockquote>
+<p>콘텐츠를 정적사이트로 랜더링되는 방식을 지정하는 템플릿 파일을 .html 형식으로 저장합니다.</p>
+</blockquote>
+</li>
+<li>data
+<blockquote>
+<p>동적 콘텐츠에서 가져오는 데이터 템플릿을 만드는데 사용합니다.</p>
+</blockquote>
+</li>
+<li>assets
+<blockquote>
+<p>hugo에서 처리되는 파일을 등록합니다. hugo 사이트 생성할 때 기본생성되지 않습니다.</p>
+</blockquote>
+</li>
+<li>i18n
+<blockquote>
+<p>다국어 지원을 위한 설정파일을 저장합니다. en.toml, ko.toml</p>
+</blockquote>
+</li>
+<li>archetypes
+<blockquote>
+<p>content 생성할 때, 기본 템플릿을 지정할 수 있습니다.</p>
+</blockquote>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
+title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date: {{ .Date }}
+draft: true
+---
+</code></pre></div></section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="http://localhost:8080/posts/202111130030/"
+      ><span>←</span><span>Configure Hugo</span></a
+    >
+     
+    <a class="next" href="http://localhost:8080/posts/my-first-post/"
+      ><span>Hugo 시작하기</span><span>→</span></a
+    >
+    
+  </nav>
+  
+
+  
+  
+  <div id="utterances" class="post-comments"></div>
+  <script
+    src="https://utteranc.es/client.js"
+    repo="dev-ironpot/blog-comments"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async
+  ></script>
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="http://localhost:8080/">Paper</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

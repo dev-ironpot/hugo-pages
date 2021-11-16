@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="ko">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Hugo 시작하기 - Paper</title>
+
+  
+  
+  <meta name="description" content="Hugo 시작하기  휴고는 Go로 작성된 정적 사이트 생성기이다. 메인페이지에 가면 웹사이트 구축을 위한 세계에서 가장 빠른 프레임워크(The world’s fastest framework for building websites) 라고 안내하고 있다.
+ 목차  Chocolate 설치[link: Chocolate 설치] Hugo 설치[link: Hugo 설치]  Chocolate 설치 (Windows)  윈도우 패키지 매니져인 Chocolatey 를 설치합니다.  Windows PowerShell을 관리자 모드로 실행합니다. Command 복사해서 실행  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System." />
+  <meta name="author" content="dev iron" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:8080/app.min.css" />
+
+  
+
+  
+  <link rel="preload" as="image" href="http://localhost:8080/theme.png" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:8080/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:8080/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:8080/instagram.svg" />
+  
+
+  
+  <link rel="icon" href="http://localhost:8080/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:8080/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.89.2" />
+
+  
+  
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="http://localhost:8080/">Paper</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">about me</a>
+    
+    <a class="" href="/projects/">projects</a>
+    
+    <a class="" href="/articles/">articles</a>
+    
+    <a class="" href="/api/">api</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/devironpot"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/dev-ironpot"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="instagram"
+      style="--url: url(./instagram.svg)"
+      href="https://instagram.com/dev.ironpot"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>Nov 12, 2021</time>
+      
+      <span>dev iron</span>
+      
+    </p>
+    <h1>Hugo 시작하기</h1>
+  </header>
+  <section class="post-content"><h2 id="hugo-시작하기">Hugo 시작하기</h2>
+<blockquote>
+<p>휴고는 Go로 작성된 정적 사이트 생성기이다.
+메인페이지에 가면 웹사이트 구축을 위한 세계에서 가장 빠른 프레임워크(The world’s fastest framework for building websites) 라고 안내하고 있다.</p>
+</blockquote>
+<h2 id="목차">목차</h2>
+<ol>
+<li>Chocolate 설치[link: Chocolate 설치]</li>
+<li>Hugo 설치[link: Hugo 설치]</li>
+</ol>
+<h3 id="chocolate-설치-windows">Chocolate 설치 (Windows)</h3>
+<blockquote>
+<h2 id="윈도우-패키지-매니져인-chocolatey-를-설치합니다">윈도우 패키지 매니져인 Chocolatey 를 설치합니다.</h2>
+<ol>
+<li>Windows PowerShell을 관리자 모드로 실행합니다.</li>
+<li>Command 복사해서 실행</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Set-ExecutionPolicy Bypass -Scope Process -Force; <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol -bor 3072; iex <span style="color:#f92672">((</span>New-Object System.Net.WebClient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
+</code></pre></div><ol start="3">
+<li>설치가 완료되면 command를 입력해서 설치를 확인힙니다.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">choco
+Chocolatey v0.11.3
+Please run <span style="color:#e6db74">&#39;choco -?&#39;</span> or <span style="color:#e6db74">&#39;choco &lt;command&gt; -?&#39;</span> <span style="color:#66d9ef">for</span> help menu.
+</code></pre></div></blockquote>
+<h3 id="hugo-설치-windows">Hugo 설치 (Windows)</h3>
+<blockquote>
+<h2 id="설치된-chocolatey-로-hugo를-설치합니다">설치된 Chocolatey 로 Hugo를 설치합니다.</h2>
+<ol>
+<li>Cmder를 관리자 권한으로 실행합니다.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">choco install hugo -confirm
+<span style="color:#75715e">#or</span>
+choco install hugo-extended -confirm
+</code></pre></div><ol start="2">
+<li>command를 입력해서 설치를 확인합니다.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo help
+</code></pre></div></blockquote>
+<h3 id="hugo-사이트-생성">Hugo 사이트 생성</h3>
+<blockquote>
+<h2 id="설치된-hugo-로-사이트를-생성합니다">설치된 Hugo 로 사이트를 생성합니다.</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site ironpot.app
+cd ironpot.app
+git init
+<span style="color:#75715e"># 테마 설치하기</span>
+git submodule add https://github.com/nanxiaobei/hugo-paper.git themes/paper
+echo theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;paper&#39;</span> &gt;&gt; config.toml
+<span style="color:#75715e"># 첫번째 글 등록하기</span>
+hugo new posts/my-first-post.md
+<span style="color:#75715e"># 실행하기</span>
+hugo server -D
+<span style="color:#75715e"># Build static pages</span>
+hugo -D
+</code></pre></div></blockquote>
+<p>ref.</p>
+<p><a href="https://gohugo.io">https://gohugo.io</a>
+<a href="https://chocolatey.org/install">https://chocolatey.org/install</a></p>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="http://localhost:8080/posts/202111130006/"
+      ><span>←</span><span>Hugo Directory Structure</span></a
+    >
+     
+    <a class="next" href="http://localhost:8080/posts/202111130033/"
+      ><span>Hugo shortcodes. figure</span><span>→</span></a
+    >
+    
+  </nav>
+  
+
+  
+  
+  <div id="utterances" class="post-comments"></div>
+  <script
+    src="https://utteranc.es/client.js"
+    repo="dev-ironpot/blog-comments"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async
+  ></script>
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="http://localhost:8080/">Paper</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

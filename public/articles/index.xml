@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Paper</title>
+    <link>http://localhost:8080/articles/</link>
+    <description>Recent content in Articles on Paper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 13 Nov 2021 00:36:54 +0900</lastBuildDate><atom:link href="http://localhost:8080/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4차 산업 혁명 건설 산업의 변화와 미래</title>
+      <link>http://localhost:8080/articles/article-3/</link>
+      <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/articles/article-3/</guid>
+      <description>건설 산업의 변화와 미래 </description>
+    </item>
+    
+    <item>
+      <title>비움의 건축</title>
+      <link>http://localhost:8080/articles/article-2/</link>
+      <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/articles/article-2/</guid>
+      <description>Structuring Emptiness </description>
+    </item>
+    
+    <item>
+      <title>삶을 짓는 사람들, 건축설계사무소</title>
+      <link>http://localhost:8080/articles/article-1/</link>
+      <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/articles/article-1/</guid>
+      <description>특집 다큐 - 직장탐구 팀 1부- 삶을 짓는 사람들, 건축설계사무소:   진짜건축가가 설계하는 전체과정 대공개:   건축 타임랩스 6개월 과정을 3분에:   </description>
+    </item>
+    
+  </channel>
+</rss>

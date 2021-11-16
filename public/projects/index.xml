@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Paper</title>
+    <link>http://localhost:8080/projects/</link>
+    <description>Recent content in Projects on Paper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 14 Nov 2021 00:36:54 +0900</lastBuildDate><atom:link href="http://localhost:8080/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시흥 장현지구 다세대</title>
+      <link>http://localhost:8080/projects/project-2/</link>
+      <pubDate>Sun, 14 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/projects/project-2/</guid>
+      <description>annie (figure)    camylla (figure)    enrico (figure)    fray (figure)    hans (figure)    joackim (figure)    mia (figure)    muhammad (figure)    patrick (figure)    raf (figure)    roman (figure)    stephen (figure)    toa (figure)    wolfgang (figure)   Scrap by unsplash</description>
+    </item>
+    
+    <item>
+      <title>평택 모산영신지구 다세대</title>
+      <link>http://localhost:8080/projects/project-1/</link>
+      <pubDate>Sun, 14 Nov 2021 00:36:54 +0900</pubDate>
+      
+      <guid>http://localhost:8080/projects/project-1/</guid>
+      <description>camylla (figure)    mia (figure)    raf (figure)    toa (figure)   Scrap by unsplash</description>
+    </item>
+    
+  </channel>
+</rss>
