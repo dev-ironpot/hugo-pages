@@ -7,6 +7,7 @@ theme = 'paper'
 #githubRepo
 githubRepo = 'dev-ironpot/blog-comments'
 googleAnalytics = "G-TWYMR5JJT2"
+min_version= "0.89.2"
 
 [params]
   disableHLJS = true                         # don't use highlight.js
@@ -45,4 +46,5 @@ googleAnalytics = "G-TWYMR5JJT2"
   weight = -80
 
 [author]
-  name='dev iron'
+  name="dev iron"
+  homepage="https://ironpot.netlify.app"
