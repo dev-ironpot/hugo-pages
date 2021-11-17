@@ -1,7 +1,7 @@
 ---
 title: "Hugo 시작하기"
 date: 2021-11-12T21:07:15+09:00
-draft: true
+draft: false
 ---
 
 ## Hugo 시작하기
