@@ -24,7 +24,7 @@ min_version= "0.89.2"
   identifier = 'about'
   name = 'about me'
   pre = "<i class='fa fa-heart'></i>"
-  url = '/about/'
+  url = '/about'
   weight = -110
 [[menu.main]]
   name = 'projects'
@@ -42,7 +42,7 @@ min_version= "0.89.2"
   name = 'api'
   post = "<span class='alert'>New!</span>"
   pre = "<i class='fa fa-road'></i>"
-  url = '/api/'
+  url = '/api'
   weight = -80
 
 [author]
