@@ -8,6 +8,7 @@ theme = 'paper'
 githubRepo = 'dev-ironpot/blog-comments'
 googleAnalytics = "G-TWYMR5JJT2"
 min_version= "0.89.2"
+DefaultContentLanguage = "ko"
 
 [params]
   disableHLJS = true                         # don't use highlight.js
@@ -21,24 +22,27 @@ min_version= "0.89.2"
 
 [menu]
 [[menu.main]]
-  identifier = 'about'
+  identifier = 'menu-about'
   name = 'about me'
   pre = "<i class='fa fa-heart'></i>"
   url = '/about'
   weight = -110
 [[menu.main]]
+  identifier = 'menu-projects'
   name = 'projects'
   post = "<span class='alert'>New!</span>"
   pre = "<i class='fa fa-road'></i>"
   url = '/projects/'
   weight = -100
 [[menu.main]]
+  identifier = 'menu-articles'
   name = 'articles'
   post = "<span class='alert'>New!</span>"
   pre = "<i class='fa fa-road'></i>"
   url = '/articles/'
   weight = -90
 [[menu.main]]
+  identifier = 'menu-api'
   name = 'api'
   post = "<span class='alert'>New!</span>"
   pre = "<i class='fa fa-road'></i>"

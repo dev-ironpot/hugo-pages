@@ -1,0 +1,26 @@
+# post-content
+- id: prev_page
+  translation: "이전 페이지"
+
+- id: next_page
+  translation: "다음 페이지"
+
+# about
+- id: name
+  translation: "이름"
+- id: email
+  translation: "이메일"
+- id: message
+  translation: "메시지"
+- id: submit
+  translation: "보내기"
+
+# menu
+- id: menu-about
+  translation: "소개"
+- id: menu-projects
+  translation: "프로젝트"
+- id: menu-articles
+  translation: "글"
+- id: menu-api
+  translation: "API"

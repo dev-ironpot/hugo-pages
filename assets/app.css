@@ -11,7 +11,7 @@
 :root {
   --gap: 3.5rem;
   --y-gap: 8rem;
-  --wide: 140rem;   /* default 140 */
+  --wide: 140rem; /* default 140 */
   --narrow: 80rem; /* default 80 */
   --side: calc((var(--wide) - var(--narrow)) / 2);
   --header: 8rem;
@@ -72,8 +72,8 @@ body {
   padding-right: var(--gap);
   padding-left: var(--gap);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
   line-height: 1.8;
   color: var(--pro);
@@ -152,8 +152,8 @@ textarea {
 }
 
 button,
-input[type='button'],
-input[type='submit'] {
+input[type="button"],
+input[type="submit"] {
   cursor: pointer;
 }
 
@@ -247,19 +247,19 @@ img {
     min-width: auto;
   }
 
-  [data-menu='true'] {
+  [data-menu="true"] {
     --header: 16rem;
   }
 
-  [data-menu='true'] .header {
+  [data-menu="true"] .header {
     position: relative;
   }
 
-  [data-menu='true'] .header > * {
+  [data-menu="true"] .header > * {
     height: calc(var(--header) / 2);
   }
 
-  [data-menu='true'] .menu {
+  [data-menu="true"] .menu {
     position: absolute;
     inset: auto 0 0;
     border-bottom: 1px solid var(--fog);
@@ -347,7 +347,7 @@ img {
 }
 
 .post-title p span::before {
-  content: '·';
+  content: "·";
   margin-inline: 0.8rem;
 }
 
@@ -425,7 +425,7 @@ img {
   }
 
   .post-title aside span::before {
-    content: '·';
+    content: "·";
     margin-inline: 0.5rem;
   }
 }
@@ -489,7 +489,8 @@ img {
 
 .post-content del {
   text-decoration: none;
-  background: linear-gradient(to right, var(--pro) 100%, transparent 0) 0 50% / 1px 1px repeat-x;
+  background: linear-gradient(to right, var(--pro) 100%, transparent 0) 0 50% /
+    1px 1px repeat-x;
 }
 
 .post-content p,
@@ -603,7 +604,7 @@ img {
 .post-content code {
   padding: 0.5rem 1rem;
   margin-inline: 0.5rem;
-  font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
+  font-family: Menlo, Monaco, "Courier New", Courier, monospace;
   font-size: 0.8em;
   line-height: 1.5;
   background: rgba(var(--dark), 0.06);
@@ -653,7 +654,7 @@ img {
 }
 
 .footer p + p::before {
-  content: '·';
+  content: "·";
   margin-inline: 0.6rem;
 }
 

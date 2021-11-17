@@ -1,7 +1,10 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
   <!-- Title -->
   <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
@@ -9,7 +12,10 @@
   <!-- Meta -->
   {{ if eq .Kind "page" }}
   <meta name="description" content="{{ .Summary }}" />
-  <meta name="author" content="{{ .Params.Author | default site.Author.name }}" />
+  <meta
+    name="author"
+    content="{{ .Params.Author | default site.Author.name }}"
+  />
   {{ else }}
   <meta name="description" content="{{ site.Params.description }}" />
   <meta name="author" content="{{ site.Author.name }}" />
@@ -24,7 +30,11 @@
   <link rel="preload stylesheet" as="style" href="{{ $css.Permalink }}" />
 
   {{ if and .IsPage (not site.Params.disableHLJS) }}
-  <link rel="preload stylesheet" as="style" href="{{ `an-old-hope.min.css` | absURL }}" />
+  <link
+    rel="preload stylesheet"
+    as="style"
+    href="{{ `an-old-hope.min.css` | absURL }}"
+  />
   <script
     defer
     src="{{ `highlight.min.js` | absURL }}"

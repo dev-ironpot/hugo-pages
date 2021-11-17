@@ -1,0 +1,26 @@
+# post-content
+- id: prev_page
+  translation: "Prev Page"
+
+- id: next_page
+  translation: "Next Page"
+
+# about
+- id: name
+  translation: "Name"
+- id: email
+  translation: "Email"
+- id: message
+  translation: "Message"
+- id: submit
+  translation: "Send Message"
+
+# menu
+- id: menu-about
+  translation: "About"
+- id: menu-projects
+  translation: "Projects"
+- id: menu-articles
+  translation: "Articles"
+- id: menu-api
+  translation: "API"
