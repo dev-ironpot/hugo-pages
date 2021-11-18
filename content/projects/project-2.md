@@ -2,6 +2,7 @@
 title: "시흥 장현지구 다세대"
 date: 2021-11-14T00:36:54+09:00
 draft: false
+categories: ["project"]
 ---
 
 {{< figure src="/images/annie-spratt-kKhzWajTC40-unsplash.jpg" title="annie (figure)" >}}

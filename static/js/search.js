@@ -12,7 +12,7 @@ let fuseOptions = {
   location: 0,
   distance: 100,
   maxPatternLength: 64,
-  minMatchCharLength: 3,
+  minMatchCharLength: 2,
   keys: [
     { name: "title", weight: 0.8 },
     { name: "tags", weight: 0.5 },
@@ -70,14 +70,24 @@ function populateResults(result) {
         "i"
       );
       var maxTextLength = summaryInclude * 2;
-      // Index of the matched search term
-      var indexOfMatch = contents
-        .toLowerCase()
-        .indexOf(searchQuery.toLowerCase());
-      // Index of the first word of the sentence with the search term in it
-      var indexOfSentence = contents.indexOf(
-        getSentenceByWordRegex.exec(contents)
-      );
+
+      const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+      var isKorean = korean.test(searchQuery);
+
+      if (isKorean === false) {
+        // Index of the matched search term
+        var indexOfMatch = contents
+          .toLowerCase()
+          .indexOf(searchQuery.toLowerCase());
+        // Index of the first word of the sentence with the search term in it
+        var indexOfSentence = contents.indexOf(
+          getSentenceByWordRegex.exec(contents)
+        );
+      } else {
+        var indexOfMatch = 0;
+
+        if (contents != null) var indexOfSentence = contents.length - 1;
+      }
 
       var start;
       var cutStart = false;
@@ -95,7 +105,8 @@ function populateResults(result) {
       // Change end length to the text length if it is longer than
       // the text length to prevent problems
       var end = start + maxTextLength;
-      if (end > contents.length) {
+
+      if (contents != null && end > contents.length) {
         end = contents.length;
       }
 
@@ -104,7 +115,7 @@ function populateResults(result) {
         end -= 3;
         snippet += "…" + contents.substring(start, end).trim();
       } else {
-        snippet += contents.substring(start, end).trim();
+        if (contents != null) snippet += contents.substring(start, end).trim();
       }
     }
     snippet += "…";

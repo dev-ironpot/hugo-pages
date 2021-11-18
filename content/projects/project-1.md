@@ -2,6 +2,7 @@
 title: "평택 모산영신지구 다세대"
 date: 2021-11-14T00:36:54+09:00
 draft: false
+categories: ["project"]
 ---
 
 {{< figure src="/images/camylla-battani-A5E-ym6WyGM-unsplash.jpg" title="camylla (figure)" >}}
