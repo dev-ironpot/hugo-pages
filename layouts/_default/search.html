@@ -5,11 +5,14 @@
 <h1 class="main-title">{{ .Title }}</h1>
 {{ end }}
 
+<!-- TODO: 검색폼, 검색결과 폼을 partial로 분할해서 사용한다. -->
 <!-- 검색 기능 getElementById(search-query)-->
 {{ partial "search-form.html" . }}
 
-<!-- TODO: 검색폼, 검색결과 폼을 partial로 분할해서 사용한다. -->
+<hr />
+
 <!-- 검색 결과 getElementById(search-results)--> 
+{{ partial "search-results.html" . }}
 <!-- <ul id="results">
   <li>Enter a keyword above to search this site.</li>
 </ul> -->

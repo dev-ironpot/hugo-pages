@@ -33,6 +33,12 @@ a {
 a:hover {
   color: #ffc200 !important;
 }
+/* .post-content hr 과 동일 */
+hr {
+  height: 1px;
+  border: 0;
+  background: var(--fog);
+}
 
 .uil-twitter:hover {
   color: #ffc200 !important;

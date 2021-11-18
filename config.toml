@@ -28,35 +28,35 @@ DefaultContentLanguage = "ko"
 [[menu.main]]
   identifier = 'menu-about'
   name = 'about me'
-  pre = "<i class='fa fa-heart'></i>"
+  pre = "<i class='fas fa-heart'></i>"
   url = '/about'
   weight = -110
 [[menu.main]]
   identifier = 'menu-projects'
   name = 'projects'
   post = "<span class='alert'>New!</span>"
-  pre = "<i class='fa fa-road'></i>"
+  pre = "<i class='fas fa-camera'></i>"
   url = '/projects/'
   weight = -100
 [[menu.main]]
   identifier = 'menu-articles'
   name = 'articles'
   post = "<span class='alert'>New!</span>"
-  pre = "<i class='fa fa-road'></i>"
+  pre = "<i class='fas fa-articles'></i>"
   url = '/articles/'
   weight = -90
 [[menu.main]]
   identifier = 'menu-api'
   name = 'api'
   post = "<span class='alert'>New!</span>"
-  pre = "<i class='fa fa-road'></i>"
+  pre = "<i class='fas fa-alert'></i>"
   url = '/api'
   weight = -80
 [[menu.main]]
   identifier = 'menu-search'
   name = 'search'
   post = "<span class='alert'>New!</span>"
-  pre = "<i class='fa fa-road'></i>"
+  pre = "<i class='fas fa-search'></i>"
   url = '/search'
   weight = -70
 

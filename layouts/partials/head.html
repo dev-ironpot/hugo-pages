@@ -28,6 +28,11 @@
   <!---->
   {{ $css := slice $app_css $custom_css | resources.Concat "app.css" | minify }}
   <link rel="preload stylesheet" as="style" href="{{ $css.Permalink }}" />
+  <!-- font awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
 
   {{ if and .IsPage (not site.Params.disableHLJS) }}
   <link

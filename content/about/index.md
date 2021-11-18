@@ -1,7 +1,7 @@
 ---
 title: About Me
 type: about
-layout: profile
+layout: contact
 ---
 
 about page

@@ -12,37 +12,3 @@
   />
   <input type="submit" value="search" />
 </form>
-
-<!-- <div class="search">
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{/* partial "debugprint.html" (site.GetPage "/search") */}}
-  </header>
-
-  <form action="{{ .Permalink }}">
-    <input id="search-query" name="q" />
-  </form> -->
-<hr />
-
-<div id="search-results"></div>
-<!-- </div> -->
-
-<template id="search-result-template"
-  ><div class="search_summary">
-    <h2 class="post-title no-text-decoration">
-      <a class="search_link search_title" href=""></a>
-    </h2>
-    <p><em class="search_snippet"></em></p>
-    <small>
-      <table>
-        <tr class="search_iftags">
-          <td><strong>Tags</strong></td>
-          <td class="search_tags"></td>
-        </tr>
-        <tr class="search_ifcategories">
-          <td><strong>Categories</strong></td>
-          <td class="search_categories"></td>
-        </tr>
-      </table>
-    </small></div
-></template>
