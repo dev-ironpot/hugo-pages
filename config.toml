@@ -2,6 +2,7 @@ baseURL = 'https://ironpot.netlify.app/'
 languageCode = 'ko'
 title = 'Paper'
 theme = 'paper'
+#theme = ["hugo-search-fuse-js", "paper"]
 #disqus 주석할 경우, github uttrences 를 기본 댓글 기능으로 사용한다.
 #disqusShortname = 'dev-ironpot'   # add disqus comments
 #githubRepo
@@ -9,6 +10,9 @@ githubRepo = 'dev-ironpot/blog-comments'
 googleAnalytics = "G-TWYMR5JJT2"
 min_version= "0.89.2"
 DefaultContentLanguage = "ko"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   disableHLJS = true                         # don't use highlight.js
@@ -48,6 +52,13 @@ DefaultContentLanguage = "ko"
   pre = "<i class='fa fa-road'></i>"
   url = '/api'
   weight = -80
+[[menu.main]]
+  identifier = 'menu-search'
+  name = 'search'
+  post = "<span class='alert'>New!</span>"
+  pre = "<i class='fa fa-road'></i>"
+  url = '/search'
+  weight = -70
 
 [author]
   name="dev iron"

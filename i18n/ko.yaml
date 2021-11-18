@@ -23,4 +23,6 @@
 - id: menu-articles
   translation: "글"
 - id: menu-api
-  translation: "API"
+  translation: "공지"
+- id: menu-search
+  translation: "검색"

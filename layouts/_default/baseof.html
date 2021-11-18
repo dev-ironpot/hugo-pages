@@ -16,6 +16,6 @@
 
     <main class="main">{{ block "main" . }}{{ end }}</main>
 
-    {{ partial "footer.html" . }}
+    {{ block "footer" . }} {{ partial "footer.html" . }} {{ end }}
   </body>
 </html>

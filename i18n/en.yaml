@@ -23,4 +23,6 @@
 - id: menu-articles
   translation: "Articles"
 - id: menu-api
-  translation: "API"
+  translation: "Notices"
+- id: menu-search
+  translation: "Search"
