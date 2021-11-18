@@ -5,19 +5,20 @@
 <h1 class="main-title">{{ .Title }}</h1>
 {{ end }}
 
-<!-- 검색 기능 -->
+<!-- 검색 기능 getElementById(search-query)-->
 {{ partial "search-form.html" . }}
 
+<!-- TODO: 검색폼, 검색결과 폼을 partial로 분할해서 사용한다. -->
+<!-- 검색 결과 getElementById(search-results)--> 
 <!-- <ul id="results">
   <li>Enter a keyword above to search this site.</li>
 </ul> -->
 
-
-
-
 {{ end }} 
 
 {{ define "footer" }}
+
+  {{ partial "footer" .}}
   <!-- If you don't need IE 11 support you can remove this next script block -->
   <!-- <script type="text/javascript">
     // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later

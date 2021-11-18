@@ -60,7 +60,7 @@ function executeSearch(searchQuery) {
 
 function populateResults(result) {
   result.forEach(function (value, key) {
-    let contents = value.item.contents;
+    let contents = new String(value.item.contents);
     let snippet = "";
     let snippetHighlights = [];
     snippetHighlights.push(searchQuery);
@@ -71,23 +71,16 @@ function populateResults(result) {
       );
       var maxTextLength = summaryInclude * 2;
 
-      const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
-      var isKorean = korean.test(searchQuery);
+      console.log(`${key} => `, value);
 
-      if (isKorean === false) {
-        // Index of the matched search term
-        var indexOfMatch = contents
-          .toLowerCase()
-          .indexOf(searchQuery.toLowerCase());
-        // Index of the first word of the sentence with the search term in it
-        var indexOfSentence = contents.indexOf(
-          getSentenceByWordRegex.exec(contents)
-        );
-      } else {
-        var indexOfMatch = 0;
-
-        if (contents != null) var indexOfSentence = contents.length - 1;
-      }
+      // Index of the matched search term
+      var indexOfMatch = contents
+        .toLowerCase()
+        .indexOf(searchQuery.toLowerCase());
+      // Index of the first word of the sentence with the search term in it
+      var indexOfSentence = contents.indexOf(
+        getSentenceByWordRegex.exec(contents)
+      );
 
       var start;
       var cutStart = false;
