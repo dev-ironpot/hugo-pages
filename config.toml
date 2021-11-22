@@ -11,8 +11,12 @@ enableInlineShortcodes = true
 #disqusShortname = 'dev-ironpot'   # add disqus comments
 #githubRepo
 githubRepo = 'dev-ironpot/blog-comments'
+<<<<<<< HEAD
 #googleAnalytics = 'UA-213499305-1'
 googleAnalytics = 'G-4Y1MXZV2EE'
+=======
+googleAnalytics = "UA-213499305-1"
+>>>>>>> 6d622950840279dcb00849dd850912cb4173282f
 
 
 [outputs]
