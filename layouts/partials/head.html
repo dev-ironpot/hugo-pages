@@ -74,7 +74,10 @@
   <!-- Misc -->
   {{ if or hugo.IsProduction (eq site.Params.env "production") }}
   <!---->
-  {{ template "_internal/google_analytics_async.html" . }}
+  <!-- for UA- code -->
+  <!-- {{ template "_internal/google_analytics_async.html" . }} -->
+  <!-- for G- code -->
+  {{ template "_internal/google_analytics.html" . }}
   <!---->
   {{ template "_internal/google_news.html" . }}
   <!---->
