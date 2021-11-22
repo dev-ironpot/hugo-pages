@@ -559,8 +559,8 @@ img {
 
 .post-content .highlight,
 .post-content pre {
-  margin: 0 calc(var(--gap) * -1) 4rem;
-  overflow-x: auto;
+  /* margin: 0 calc(var(--gap) * -1) 4rem; */
+  /* overflow-x: auto; */
   background: var(--hljs-bg) !important;
   border-radius: 0.5rem;
 }

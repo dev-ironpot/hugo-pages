@@ -1,15 +1,18 @@
 baseURL = 'https://ironpot.netlify.app/'
-languageCode = 'ko'
 title = 'Paper'
 theme = 'paper'
-#theme = ["hugo-search-fuse-js", "paper"]
+copyright = "Copyright © 2021, ironpot; all rights reserved."
+paginate = 5
+languageCode = "ko"
+DefaultContentLanguage = "ko"
+enableInlineShortcodes = true
+
 #disqus 주석할 경우, github uttrences 를 기본 댓글 기능으로 사용한다.
 #disqusShortname = 'dev-ironpot'   # add disqus comments
 #githubRepo
 githubRepo = 'dev-ironpot/blog-comments'
-googleAnalytics = "G-TWYMR5JJT2"
-min_version= "0.89.2"
-DefaultContentLanguage = "ko"
+googleAnalytics = "UA-213499305-1"
+
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -63,3 +66,8 @@ DefaultContentLanguage = "ko"
 [author]
   name="dev iron"
   homepage="https://ironpot.netlify.app"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
