@@ -154,6 +154,10 @@ hr {
     border: none;
     padding-top: var(--gap);
   }
+
+  /* .column {
+    width: 100%;
+  } */
 }
 
 /* 1200 미만일 경우, padding-top을 0으로 조정 (var(--breakpoint-xl)-1)*/
@@ -161,6 +165,10 @@ hr {
   body {
     padding-top: 0;
   }
+
+  /* .column {
+    width: 50%;
+  } */
 }
 
 /* 1200 이상일 경우, font 사이즈 변경 var(--breakpoint-xl)*/

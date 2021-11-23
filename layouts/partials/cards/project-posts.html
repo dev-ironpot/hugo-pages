@@ -1,21 +1,28 @@
-<!-- $pages -->
-{{ $pages := union .RegularPages .Sections }}
-<!---->{{ if .IsHome }} {{ $pages = where site.RegularPages "Type" "in"
-site.Params.mainSections }} {{ end }}
-<!-- Articles -->
-{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages
-}}
-<article class="post-entry">
-  <div class="card" style="background-image: url('{{ .Page.Params.image }}')">
-    <div class="card-content">
-      <h2 class="card-title">{{.Title}}</h2>
-      <p class="card-body">{{.Summary}}</p>
-      <time>{{ .Date | time.Format ":date_medium" }}</time>
-      <a href="{{ .Permalink }}"></a>
-    </div>
+<div class="row">
+  <!-- $pages -->
+  {{ $pages := union .RegularPages .Sections }}
+  <!---->{{ if .IsHome }} {{ $pages = where site.RegularPages "Type" "in"
+  site.Params.mainSections }} {{ end }}
+  <!-- Articles -->
+  {{ $paginator := .Paginate $pages }} {{ range $index, $page :=
+  $paginator.Pages }}
+  <div class="column">
+    <article class="post-entry">
+      <div
+        class="card"
+        style="background-image: url('{{ .Page.Params.image }}')"
+      >
+        <div class="card-content">
+          <h2 class="card-title">{{.Title}}</h2>
+          <p class="card-body">{{.Summary}}</p>
+          <time>{{ .Date | time.Format ":date_medium" }}</time>
+          <a href="{{ .Permalink }}"></a>
+        </div>
+      </div>
+    </article>
   </div>
-</article>
-{{ end }}
+  {{ end }}
+</div>
 
 <!-- Main Nav -->
 {{ if gt $paginator.TotalPages 1 }}
@@ -159,5 +166,53 @@ site.Params.mainSections }} {{ end }}
       scroll-behavior: atuo !important;
       transition-delay: 0ms !important;
     }
+  }
+
+  /* reset post-entry */
+  /* .post-entry {
+    margin-top: 0;
+    padding: 8 0;
+  } */
+
+  /* for respnsibility projects */
+  .post-entry {
+    margin: 0px -8px;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .post-entry,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /* 1200 미만일 경우, padding-top을 0으로 조정 (var(--breakpoint-xl)-1)*/
+  @media (max-width: 1199px) {
+    /* .column {
+      width: 50%;
+    } */
   }
 </style>
