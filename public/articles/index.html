@@ -17,10 +17,13 @@
 
 
 <html lang="ko">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
   
   <title>Articles - Paper</title>
@@ -37,24 +40,29 @@
   
   
   
-  <link rel="preload stylesheet" as="style" href="http://localhost:8080/app.min.css" />
+  <link rel="preload stylesheet" as="style" href="https://ironpot.netlify.app/app.min.css" />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
 
   
 
   
-  <link rel="preload" as="image" href="http://localhost:8080/theme.png" />
+  <link rel="preload" as="image" href="https://ironpot.netlify.app/theme.png" />
 
   
-  <link rel="preload" as="image" href="http://localhost:8080/twitter.svg" />
+  <link rel="preload" as="image" href="https://ironpot.netlify.app/twitter.svg" />
   
-  <link rel="preload" as="image" href="http://localhost:8080/github.svg" />
+  <link rel="preload" as="image" href="https://ironpot.netlify.app/github.svg" />
   
-  <link rel="preload" as="image" href="http://localhost:8080/instagram.svg" />
+  <link rel="preload" as="image" href="https://ironpot.netlify.app/instagram.svg" />
   
 
   
-  <link rel="icon" href="http://localhost:8080/favicon.ico" />
-  <link rel="apple-touch-icon" href="http://localhost:8080/apple-touch-icon.png" />
+  <link rel="icon" href="https://ironpot.netlify.app/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://ironpot.netlify.app/apple-touch-icon.png" />
 
   
   <meta name="generator" content="Hugo 0.89.2" />
@@ -64,10 +72,47 @@
   <link
     rel="alternate"
     type="application/rss&#43;xml"
-    href="http://localhost:8080/articles/index.xml"
+    href="https://ironpot.netlify.app/articles/index.xml"
     title="Paper"
   />
   
+
+  
+  
+  
+  
+  
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y1MXZV2EE"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-4Y1MXZV2EE', { 'anonymize_ip': false });
+}
+</script>
+
+  
+  
+  
+  <meta property="og:title" content="Articles" />
+<meta property="og:description" content="설명입니다." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ironpot.netlify.app/articles/" /><meta property="og:image" content="https://ironpot.netlify.app/site-feature-image.jpg"/>
+
+
+  
+  <meta itemprop="name" content="Articles">
+<meta itemprop="description" content="설명입니다.">
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ironpot.netlify.app/site-feature-image.jpg"/>
+
+<meta name="twitter:title" content="Articles"/>
+<meta name="twitter:description" content="설명입니다."/>
 
   
   
@@ -78,39 +123,52 @@
     <header class="header">
   
   <p class="logo">
-    <a class="site-name" href="http://localhost:8080/">Paper</a><a class="btn-dark"></a>
+    <a class="site-name" href="https://ironpot.netlify.app/">Paper</a
+    ><a class="btn-dark"></a>
   </p>
   
 
   <script>
     let bodyClx = document.body.classList;
-    let btnDark = document.querySelector('.btn-dark');
-    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
-    let darkVal = localStorage.getItem('dark');
+    let btnDark = document.querySelector(".btn-dark");
+    let sysDark = window.matchMedia("(prefers-color-scheme: dark)");
+    let darkVal = localStorage.getItem("dark");
 
     let setDark = (isDark) => {
-      bodyClx[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+      bodyClx[isDark ? "add" : "remove"]("dark");
+      localStorage.setItem("dark", isDark ? "yes" : "no");
     };
 
-    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
-    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+    setDark(darkVal ? darkVal === "yes" : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove("not-ready"));
 
-    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
-    sysDark.addEventListener('change', (event) => setDark(event.matches));
+    btnDark.addEventListener("click", () => setDark(!bodyClx.contains("dark")));
+    sysDark.addEventListener("change", (event) => setDark(event.matches));
   </script>
 
   
   
   <nav class="menu">
     
-    <a class="" href="/about/">about me</a>
+    <a class="" href="/about"
+      >소개</a
+    >
     
-    <a class="" href="/projects/">projects</a>
+    <a class="" href="/projects/"
+      >프로젝트</a
+    >
     
-    <a class="active" href="/articles/">articles</a>
+    <a class="active" href="/articles/"
+      >글</a
+    >
     
-    <a class="" href="/api/">api</a>
+    <a class="" href="/api"
+      >공지</a
+    >
+    
+    <a class="" href="/search"
+      >검색</a
+    >
     
   </nav>
   
@@ -155,24 +213,29 @@
 
 
 
-
  
 <article class="post-entry">
   <h2>4차 산업 혁명 건설 산업의 변화와 미래</h2>
-  <time>Nov 13, 2021</time>
-  <a href="http://localhost:8080/articles/article-3/"></a>
+  <time>2021. 11. 13.</time>
+  <a href="https://ironpot.netlify.app/articles/article-3/"></a>
+
+  
 </article>
 
 <article class="post-entry">
   <h2>비움의 건축</h2>
-  <time>Nov 13, 2021</time>
-  <a href="http://localhost:8080/articles/article-2/"></a>
+  <time>2021. 11. 13.</time>
+  <a href="https://ironpot.netlify.app/articles/article-2/"></a>
+
+  
 </article>
 
 <article class="post-entry">
   <h2>삶을 짓는 사람들, 건축설계사무소</h2>
-  <time>Nov 13, 2021</time>
-  <a href="http://localhost:8080/articles/article-1/"></a>
+  <time>2021. 11. 13.</time>
+  <a href="https://ironpot.netlify.app/articles/article-1/"></a>
+
+  
 </article>
 
 
@@ -181,13 +244,21 @@
 
 </main>
 
-    <footer class="footer">
-  <p>&copy; 2021 <a href="http://localhost:8080/">Paper</a></p>
-  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+     <footer class="footer">
+  <p>&copy; 2021 <a href="https://ironpot.netlify.app/">Paper</a></p>
   <p>
-    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️
+  </p>
+  <p>
+    <a
+      href="https://github.com/nanxiaobei/hugo-paper"
+      rel="noopener"
+      target="_blank"
+      >Paper 5.1</a
+    >
   </p>
 </footer>
-
+ 
   </body>
 </html>

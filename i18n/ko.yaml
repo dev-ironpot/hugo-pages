@@ -5,6 +5,9 @@
 - id: next_page
   translation: "다음 페이지"
 
+- toc_heading: toc
+  translation: "목차"
+
 # about
 - id: name
   translation: "이름"
@@ -20,7 +23,7 @@
   translation: "소개"
 - id: menu-projects
   translation: "프로젝트"
-- id: menu-articles
+- id: menu-posts
   translation: "글"
 - id: menu-api
   translation: "공지"

@@ -11,7 +11,7 @@ $dataJ }}
     {{ end }}
   </p> -->
     <p class="card-body">{{.content}}</p>
-    <a href="{{.link}}" target="new" class="button">{{.link}}</a>
+    <a href="{{.link}}" target="new" class="button">read me</a>
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -46,11 +46,13 @@ $dataJ }}
       hsl(20 50% 50% / 0.3) 20%,
       hsl(0 0% 0% / 1)
     );
+    /* outline: 1px solid green; */
   }
 
   .card-title {
     position: relative;
     width: max-content;
+    padding-bottom: 5rem;
     /* outline: 1px solid red; */
   }
 
@@ -60,8 +62,8 @@ $dataJ }}
     height: 4px;
     left: calc(var(--padding) * -1);
     left: calc(var(--padding) * -0.67);
-    bottom: 0;
-    width: calc(100% + var(--padding));
+    bottom: 4rem;
+    width: calc(97% + var(--padding));
     background: var(--clr-accent-400);
   }
 

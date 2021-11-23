@@ -11,12 +11,8 @@ enableInlineShortcodes = true
 #disqusShortname = 'dev-ironpot'   # add disqus comments
 #githubRepo
 githubRepo = 'dev-ironpot/blog-comments'
-<<<<<<< HEAD
 #googleAnalytics = 'UA-213499305-1'
 googleAnalytics = 'G-4Y1MXZV2EE'
-=======
-googleAnalytics = "UA-213499305-1"
->>>>>>> 6d622950840279dcb00849dd850912cb4173282f
 
 
 [outputs]
@@ -28,6 +24,7 @@ googleAnalytics = "UA-213499305-1"
   github = 'dev-ironpot'                  # github.com/YOUR_GITHUB_ID
   instagram = 'dev.ironpot'            # instagram.com/YOUR_INSTAGRAM_ID
   description = '설명입니다.'
+  images = ['site-feature-image.jpg']
 
 #[permalinks]
 # posts = '/:year/:month/:title/'
@@ -47,11 +44,11 @@ googleAnalytics = "UA-213499305-1"
   url = '/projects/'
   weight = -100
 [[menu.main]]
-  identifier = 'menu-articles'
-  name = 'articles'
+  identifier = 'menu-posts'
+  name = 'posts'
   post = "<span class='alert'>New!</span>"
   pre = "<i class='fas fa-articles'></i>"
-  url = '/articles/'
+  url = '/posts/'
   weight = -90
 [[menu.main]]
   identifier = 'menu-api'

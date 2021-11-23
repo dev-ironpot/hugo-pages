@@ -149,6 +149,11 @@ hr {
       
         justify-content: space-between; */
   }
+
+  .main .contact .vertical {
+    border: none;
+    padding-top: var(--gap);
+  }
 }
 
 /* 1200 미만일 경우, padding-top을 0으로 조정 (var(--breakpoint-xl)-1)*/

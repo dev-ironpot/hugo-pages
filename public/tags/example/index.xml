@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>example on Paper</title>
-    <link>http://localhost:8080/tags/example/</link>
+    <link>https://ironpot.netlify.app/tags/example/</link>
     <description>Recent content in example on Paper</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 13 Nov 2021 00:36:54 +0900</lastBuildDate><atom:link href="http://localhost:8080/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2021, ironpot; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 13 Nov 2021 00:36:54 +0900</lastBuildDate><atom:link href="https://ironpot.netlify.app/tags/example/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reducer</title>
-      <link>http://localhost:8080/posts/202111151607/</link>
+      <link>https://ironpot.netlify.app/posts/202111151607/</link>
       <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
       
-      <guid>http://localhost:8080/posts/202111151607/</guid>
+      <guid>https://ironpot.netlify.app/posts/202111151607/</guid>
       <description>Q. 리듀서(Reducer)가 뭔가요? 리듀서라고 불리는 이유는 리듀서가 reduce()함수에서 사용하는 콜백함수이기때문에 리듀서라고 불립니다. Reduce 의미는 어떤 것을 더 단순하거나 더 일반적인 형태로 바꾸다(to change something into a simpler or more general form)라는 의미에 가깝습니다.
 리듀서(Reducer)가 뭔가요?</description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>http://localhost:8080/posts/202111130036/</link>
+      <link>https://ironpot.netlify.app/posts/202111130036/</link>
       <pubDate>Sat, 13 Nov 2021 00:36:54 +0900</pubDate>
       
-      <guid>http://localhost:8080/posts/202111130036/</guid>
+      <guid>https://ironpot.netlify.app/posts/202111130036/</guid>
       <description>Example instagram input:
 Example param input: 설명입니다.
 Example of ref and relref
-[하이라이트](http://localhost:8080/posts/highlight/) [Who](/about/#who) Example tweet input:
-Example vimeo input:   Example youtube input:   rush pic.twitter.com/DAtd9foaOF
-&amp;mdash; 개발철밥통 (@devironpot) November 14, 2021  </description>
+[하이라이트](https://ironpot.netlify.app/posts/highlight/) [Who](/about/#who) Example tweet input:
+Example vimeo input:   Example youtube input:   </description>
     </item>
     
   </channel>

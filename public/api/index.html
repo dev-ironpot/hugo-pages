@@ -20,7 +20,10 @@
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
   
   <title>Api - Paper</title>
@@ -28,7 +31,10 @@
   
   
   <meta name="description" content="formspree 이메일 보내기" />
-  <meta name="author" content="dev iron" />
+  <meta
+    name="author"
+    content="dev iron"
+  />
   
 
   
@@ -38,6 +44,11 @@
   
   
   <link rel="preload stylesheet" as="style" href="https://ironpot.netlify.app/app.min.css" />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
 
   
 
@@ -66,16 +77,19 @@
   
   
   
-<script type="application/javascript">
+  
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y1MXZV2EE"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-TWYMR5JJT2', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-4Y1MXZV2EE', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
   
   
@@ -83,7 +97,7 @@ if (!doNotTrack) {
   <meta property="og:title" content="Api" />
 <meta property="og:description" content="formspree 이메일 보내기" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ironpot.netlify.app/api/" /><meta property="article:section" content="" />
+<meta property="og:url" content="https://ironpot.netlify.app/api/" /><meta property="og:image" content="https://ironpot.netlify.app/site-feature-image.jpg"/><meta property="article:section" content="" />
 
 
 
@@ -92,10 +106,12 @@ if (!doNotTrack) {
   <meta itemprop="name" content="Api">
 <meta itemprop="description" content="formspree 이메일 보내기">
 
-<meta itemprop="wordCount" content="3">
+<meta itemprop="wordCount" content="3"><meta itemprop="image" content="https://ironpot.netlify.app/site-feature-image.jpg"/>
 <meta itemprop="keywords" content="" />
   
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ironpot.netlify.app/site-feature-image.jpg"/>
+
 <meta name="twitter:title" content="Api"/>
 <meta name="twitter:description" content="formspree 이메일 보내기"/>
 
@@ -108,39 +124,52 @@ if (!doNotTrack) {
     <header class="header">
   
   <p class="logo">
-    <a class="site-name" href="https://ironpot.netlify.app/">Paper</a><a class="btn-dark"></a>
+    <a class="site-name" href="https://ironpot.netlify.app/">Paper</a
+    ><a class="btn-dark"></a>
   </p>
   
 
   <script>
     let bodyClx = document.body.classList;
-    let btnDark = document.querySelector('.btn-dark');
-    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
-    let darkVal = localStorage.getItem('dark');
+    let btnDark = document.querySelector(".btn-dark");
+    let sysDark = window.matchMedia("(prefers-color-scheme: dark)");
+    let darkVal = localStorage.getItem("dark");
 
     let setDark = (isDark) => {
-      bodyClx[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+      bodyClx[isDark ? "add" : "remove"]("dark");
+      localStorage.setItem("dark", isDark ? "yes" : "no");
     };
 
-    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
-    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+    setDark(darkVal ? darkVal === "yes" : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove("not-ready"));
 
-    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
-    sysDark.addEventListener('change', (event) => setDark(event.matches));
+    btnDark.addEventListener("click", () => setDark(!bodyClx.contains("dark")));
+    sysDark.addEventListener("change", (event) => setDark(event.matches));
   </script>
 
   
   
   <nav class="menu">
     
-    <a class="" href="/about/">about me</a>
+    <a class="" href="/about"
+      >소개</a
+    >
     
-    <a class="" href="/projects/">projects</a>
+    <a class="" href="/projects/"
+      >프로젝트</a
+    >
     
-    <a class="" href="/articles/">articles</a>
+    <a class="" href="/posts/"
+      >글</a
+    >
     
-    <a class="active" href="/api/">api</a>
+    <a class="" href="/api"
+      >공지</a
+    >
+    
+    <a class="" href="/search"
+      >검색</a
+    >
     
   </nav>
   
@@ -186,6 +215,7 @@ if (!doNotTrack) {
     
     <p class="card-body">Consectetur repellat expedita ab voluptas optio. Officiis aut aut enim. Earum asperiores velit odit similique consectetur officiis. Est earum aut id aspernatur perferendis ut nulla earum dolorem. Mollitia dolorem commodi alias aut quia consequatur enim.</p>
     <a href="https://preston.info" target="new" class="button">https://preston.info</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -198,6 +228,7 @@ if (!doNotTrack) {
  Iusto quas tenetur. Voluptatum nihil aliquid reiciendis vitae similique. Consequatur assumenda est laudantium quibusdam odio alias quasi. Ad magnam sit enim nulla. Ab et vel. Atque dolor minima blanditiis aut.
  Aut voluptatibus harum. Quos vitae voluptatem laudantium sint. Omnis deserunt laborum earum pariatur fuga ut explicabo labore ea. Voluptatem autem sequi illum occaecati quis qui fugiat. Est non pariatur minus sunt ratione autem omnis occaecati deleniti.</p>
     <a href="http://patricia.biz" target="new" class="button">http://patricia.biz</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -210,6 +241,7 @@ if (!doNotTrack) {
  Quos quia vero ipsum ipsa dolorum sit. Ut deserunt earum vel. Aut consequatur sit quas laboriosam quibusdam odio porro. Sit assumenda unde non. Sed aliquid voluptas nulla. Itaque exercitationem iusto voluptas reprehenderit.
  Atque dolores dolor unde voluptas. Ullam non cupiditate et corporis tempore illo adipisci consequatur cum. Ut occaecati dolorum consequatur sunt aut.</p>
     <a href="https://lourdes.name" target="new" class="button">https://lourdes.name</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -220,6 +252,7 @@ if (!doNotTrack) {
     
     <p class="card-body">sunt atque quidem</p>
     <a href="https://bianka.com" target="new" class="button">https://bianka.com</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -232,6 +265,7 @@ if (!doNotTrack) {
  Aperiam architecto nihil temporibus et dolores et. Optio ea aut. Neque iste sequi molestiae corporis consequatur id eos voluptatem. Nihil et voluptatem. Laborum asperiores rem nihil nemo aliquid quod.
  Et itaque expedita. Inventore quia voluptatem ut magni sed laudantium et. Molestiae delectus repellendus quod aliquid repellendus quasi itaque iste. Sed exercitationem voluptatem porro est nesciunt numquam.</p>
     <a href="http://barry.info" target="new" class="button">http://barry.info</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -242,6 +276,7 @@ if (!doNotTrack) {
     
     <p class="card-body">Dolorem quis cumque mollitia id sapiente fuga.</p>
     <a href="https://sienna.biz" target="new" class="button">https://sienna.biz</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -252,6 +287,7 @@ if (!doNotTrack) {
     
     <p class="card-body">Sit tempora harum consequatur laudantium aliquam animi nam. Sunt ipsum laboriosam aperiam in tenetur ut maxime quis nisi. Corporis accusamus aut vel expedita.</p>
     <a href="http://jailyn.name" target="new" class="button">http://jailyn.name</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -262,6 +298,7 @@ if (!doNotTrack) {
     
     <p class="card-body">modi</p>
     <a href="http://howard.name" target="new" class="button">http://howard.name</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -272,6 +309,7 @@ if (!doNotTrack) {
     
     <p class="card-body">qui</p>
     <a href="https://gerry.info" target="new" class="button">https://gerry.info</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -282,6 +320,7 @@ if (!doNotTrack) {
     
     <p class="card-body">suscipit quia voluptatum</p>
     <a href="https://rozella.name" target="new" class="button">https://rozella.name</a>
+    <img src="" width="400" height="300" />
   </div>
 </div>
 <div class="card-spacing"></div>
@@ -418,13 +457,21 @@ if (!doNotTrack) {
 </style>
  </main>
 
-    <footer class="footer">
+     <footer class="footer">
   <p>&copy; 2021 <a href="https://ironpot.netlify.app/">Paper</a></p>
-  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
   <p>
-    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️
+  </p>
+  <p>
+    <a
+      href="https://github.com/nanxiaobei/hugo-paper"
+      rel="noopener"
+      target="_blank"
+      >Paper 5.1</a
+    >
   </p>
 </footer>
-
+ 
   </body>
 </html>

@@ -5,6 +5,8 @@
     <link>https://ironpot.netlify.app/tags/</link>
     <description>Recent content in Tags on Paper</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko</language><atom:link href="https://ironpot.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko</language>
+    <copyright>Copyright © 2021, ironpot; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 13 Nov 2021 00:36:54 +0900</lastBuildDate><atom:link href="https://ironpot.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

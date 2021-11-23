@@ -5,6 +5,9 @@
 - id: next_page
   translation: "Next Page"
 
+- toc_heading: toc
+  translation: "Table Of Contents"
+
 # about
 - id: name
   translation: "Name"
@@ -20,8 +23,8 @@
   translation: "About"
 - id: menu-projects
   translation: "Projects"
-- id: menu-articles
-  translation: "Articles"
+- id: menu-posts
+  translation: "Posts"
 - id: menu-api
   translation: "Notices"
 - id: menu-search

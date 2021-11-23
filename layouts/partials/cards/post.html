@@ -1,0 +1,11 @@
+<article class="post-entry">
+  {{ if .Params.images }} {{ $original := print "images/" (path.Base
+  .Params.images) }} {{ $originalImg := .Resources.GetMatch $original }} {{ if
+  $originalImg }} {{ $thumbnailImg := $originalImg.Fit "200x100" }} {{ printf
+  `<img class="card-img-top" src="%s" alt="%s" />` $thumbnailImg.RelPermalink
+  .Title | safeHTML }} {{end}} {{end}}
+  <h2>{{ .Title }}</h2>
+  <time>{{ .Date | time.Format ":date_medium" }}</time>
+  <a href="{{ .Permalink }}"></a>
+  <p class="card-text post-summary">{{ .Summary }}</p>
+</article>

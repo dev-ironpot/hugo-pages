@@ -3,6 +3,8 @@ title: "시흥 장현지구 다세대"
 date: 2021-11-14T00:36:54+09:00
 draft: false
 categories: ["project"]
+image: "/images/camylla-battani-A5E-ym6WyGM-unsplash.jpg"
+images: ["annie-spratt-kKhzWajTC40-unsplash.jpg"]
 ---
 
 {{< figure src="/images/annie-spratt-kKhzWajTC40-unsplash.jpg" title="annie (figure)" >}}
